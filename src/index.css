@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Brand Colors - Digital Product Landing */
+    --primary: 158 72% 35%; /* #1B9C85 */
+    --primary-dark: 158 72% 30%; /* #178E79 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 218 38% 15%; /* #0F172A */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 218 21% 32%; /* #454F5E */
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 126 58% 83%; /* #D4F3D7 */
+    --success-foreground: 158 95% 5%; /* #06140C */
+    
+    --background: 0 0% 100%; /* #FFFFFF */
+    --background-secondary: 126 43% 95%; /* #EDF6EE */
+    --foreground: 0 0% 13%; /* #222222 */
+    
+    /* Design System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 13%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    --popover-foreground: 0 0% 13%;
+    
+    --muted: 126 43% 95%;
+    --muted-foreground: 218 21% 32%;
+    
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
+    --destructive-foreground: 0 0% 100%;
+    
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --ring: 158 72% 35%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--background-secondary)));
+    
+    /* Shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--secondary) / 0.1);
+    --shadow-hero: 0 20px 60px -10px hsl(var(--secondary) / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +77,38 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --primary: 158 72% 35%;
+    --primary-dark: 158 72% 30%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 218 38% 15%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 218 21% 32%;
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 126 58% 83%;
+    --success-foreground: 158 95% 5%;
+    
+    --background: 218 38% 15%;
+    --background-secondary: 218 38% 12%;
+    --foreground: 0 0% 95%;
+    
+    --card: 218 38% 15%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 218 38% 15%;
+    --popover-foreground: 0 0% 95%;
+    
+    --muted: 218 38% 12%;
+    --muted-foreground: 218 21% 65%;
+    
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 218 38% 20%;
+    --input: 218 38% 20%;
+    --ring: 158 72% 35%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +126,50 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  .hero-section {
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, hsl(var(--secondary) / 0.9), hsl(var(--secondary) / 0.7));
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .pulse-animation {
+    animation: pulse-glow 2s infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    }
   }
 }
