@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Crie, lance e venda o seu primeiro{" "}
-            <span className="text-primary bg-white/10 px-4 py-2 rounded-lg inline-block">
+            <span className="text-primary">
               produto digital
             </span>
           </h1>
