@@ -51,7 +51,7 @@ const FinalCTASection = () => {
               className="w-full md:w-auto text-2xl px-16 py-6 h-20"
             >
               <ArrowRight className="w-8 h-8 mr-4" />
-              Quero meu produto pronto agora
+              Quero meu produto pronto
             </Button>
             
             <div className="flex items-center justify-center gap-4 text-secondary-foreground/60">
