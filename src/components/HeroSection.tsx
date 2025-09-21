@@ -32,21 +32,13 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               variant="hero" 
               size="hero"
               className="w-full sm:w-auto"
             >
               🚀 Quero começar agora!
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-secondary"
-            >
-              Ver demonstração
             </Button>
           </div>
           
