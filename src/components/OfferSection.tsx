@@ -60,7 +60,7 @@ const OfferSection = () => {
                 </div>
                 
                 <Button className="w-full" size="lg">
-                  🚀 Quero meu produto pronto agora
+                  🚀 Quero meu produto pronto
                 </Button>
               </div>
             </div>
