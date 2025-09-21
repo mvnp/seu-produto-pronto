@@ -67,19 +67,19 @@ const FooterSection = () => {
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-secondary-foreground/70 text-sm">
-                    contato@seuprodujodigitalpronto.com.br
+                    suporte@axitech.com.br
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-secondary-foreground/70 text-sm">
-                    (11) 99999-9999
+                    (48) 99189-3313
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-secondary-foreground/70 text-sm">
-                    São Paulo, SP<br />
+                    Palhoça, SC<br />
                     Brasil
                   </span>
                 </div>
@@ -92,17 +92,17 @@ const FooterSection = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h5 className="font-semibold text-secondary-foreground mb-2">
-                  Marcos Pereira Digital LTDA
+                  AXITECH Negócios Digitais LTDA
                 </h5>
                 <p className="text-secondary-foreground/70 text-sm">
-                  CNPJ: 00.000.000/0001-00<br />
-                  Endereço: Rua das Flores, 123 - São Paulo, SP
+                  CNPJ: 33.240.999/0001-03<br />
+                  Endereço: Rua Padova, 175 - Palhoça, SC
                 </p>
               </div>
               
               <div className="text-center md:text-right">
                 <p className="text-secondary-foreground/50 text-sm">
-                  © 2024 Seu Produto Digital Pronto. Todos os direitos reservados.
+                  © 2025 Seu Produto Digital Pronto. Todos os direitos reservados.
                 </p>
               </div>
             </div>
