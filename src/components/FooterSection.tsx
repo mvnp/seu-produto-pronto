@@ -102,7 +102,10 @@ const FooterSection = () => {
               
               <div className="text-center md:text-right">
                 <p className="text-secondary-foreground/50 text-sm">
-                  © 2025 Seu Produto Digital Pronto. Todos os direitos reservados.
+                  © 2025 Seu Produto Digital Pronto.
+                </p>
+                <p className="text-secondary-foreground/50 text-sm">
+                  Todos os direitos reservados.
                 </p>
               </div>
             </div>
