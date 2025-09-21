@@ -11,7 +11,7 @@ const OfferSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background-secondary">
+    <section className="py-20 bg-background-secondary overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
@@ -23,10 +23,10 @@ const OfferSection = () => {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-4 lg:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
             {/* Preço Principal */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-card border-2 border-primary">
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-card border-2 border-primary w-full box-border">
                 <div className="text-center mb-8">
                   <div className="text-lg text-muted-foreground mb-2">Preço de entrada acessível</div>
                   <div className="flex items-center justify-center gap-2 md:gap-4 mb-4">
@@ -68,7 +68,7 @@ const OfferSection = () => {
             {/* Bônus e Garantia */}
             <div className="space-y-4 lg:space-y-6">
               {/* Bônus */}
-              <div className="bg-success rounded-xl p-4 lg:p-6">
+              <div className="bg-success rounded-xl p-4 lg:p-6 w-full box-border">
                 <div className="flex items-center gap-3 mb-4">
                   <Gift className="w-6 h-6 text-success-foreground" />
                   <h3 className="text-xl font-bold text-success-foreground">Bônus Exclusivos</h3>
@@ -92,7 +92,7 @@ const OfferSection = () => {
               </div>
               
               {/* Garantia */}
-              <div className="bg-primary/10 rounded-xl p-4 lg:p-6">
+              <div className="bg-primary/10 rounded-xl p-4 lg:p-6 w-full box-border">
                 <div className="flex items-center gap-3 mb-4">
                   <Shield className="w-6 h-6 text-primary" />
                   <h3 className="text-xl font-bold text-secondary">Garantia Total</h3>
@@ -108,7 +108,7 @@ const OfferSection = () => {
               </div>
               
               {/* Urgência */}
-              <div className="bg-destructive/10 rounded-xl p-4 lg:p-6 border border-destructive/20">
+              <div className="bg-destructive/10 rounded-xl p-4 lg:p-6 border border-destructive/20 w-full box-border">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="w-6 h-6 text-destructive" />
                   <h3 className="text-xl font-bold text-destructive">Oferta Limitada</h3>
