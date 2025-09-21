@@ -5,7 +5,7 @@ const FinalCTASection = () => {
   return (
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-secondary-foreground leading-tight">
             A decisão é sua...
           </h2>
