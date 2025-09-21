@@ -9,6 +9,7 @@ import OfferSection from "@/components/OfferSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <FinalCTASection />
       <FAQSection />
       <FooterSection />
+      <FloatingButtons />
     </div>
   );
 };
