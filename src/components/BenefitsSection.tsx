@@ -15,7 +15,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
-            Venda Todos Os Dias
+            Aumente Seu Faturamento
           </h2>
           <p className="text-xl text-muted-foreground">
             Descubra como transformar seu conhecimento em resultados concretos
