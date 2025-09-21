@@ -23,15 +23,15 @@ const OfferSection = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-4 lg:gap-8">
             {/* Preço Principal */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl p-8 shadow-card border-2 border-primary">
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-card border-2 border-primary">
                 <div className="text-center mb-8">
                   <div className="text-lg text-muted-foreground mb-2">Preço de entrada acessível</div>
-                  <div className="flex items-center justify-center gap-4 mb-4">
-                    <span className="text-2xl text-muted-foreground line-through">R$ 997</span>
-                    <span className="text-5xl font-bold text-primary">R$ 297</span>
+                  <div className="flex items-center justify-center gap-2 md:gap-4 mb-4">
+                    <span className="text-lg md:text-2xl text-muted-foreground line-through">R$ 997</span>
+                    <span className="text-3xl md:text-5xl font-bold text-primary">R$ 297</span>
                   </div>
                   <div className="text-lg text-muted-foreground">ou 12x de R$ 29,70</div>
                 </div>
