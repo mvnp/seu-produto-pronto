@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Método passo a passo para sair da ideia e chegar às suas primeiras campanhas 
-              rodando no Facebook Ads em poucos dias.
+              rodando no Instagram em poucos dias.
             </p>
           </div>
           
