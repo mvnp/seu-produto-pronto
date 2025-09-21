@@ -16,7 +16,7 @@ const ProblemSolutionSection = () => {
               </div>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                A maioria dos iniciantes fica travada entre ter uma ideia e conseguir vender.
+                A maioria dos iniciantes ficam travados entre ter uma ideia e conseguir vender.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
