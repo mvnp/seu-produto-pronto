@@ -59,7 +59,11 @@ const OfferSection = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full" size="lg">
+                <Button 
+                  className="w-full" 
+                  size="lg"
+                  onClick={() => window.open('https://pay.hotmart.com/M102011987K', '_blank')}
+                >
                   🚀 Quero meu produto pronto
                 </Button>
               </div>

@@ -37,6 +37,7 @@ const HeroSection = () => {
               variant="hero" 
               size="hero"
               className="w-full sm:w-auto"
+              onClick={() => window.open('https://pay.hotmart.com/M102011987K', '_blank')}
             >
               🚀 Quero começar agora!
             </Button>
