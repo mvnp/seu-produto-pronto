@@ -48,7 +48,7 @@ const FinalCTASection = () => {
             <Button 
               variant="hero" 
               size="hero"
-              className="w-full md:w-auto text-2xl px-16 py-6 h-20"
+              className="w-full md:w-auto text-lg md:text-2xl px-8 md:px-16 py-6 h-20"
             >
               <ArrowRight className="w-8 h-8 mr-4" />
               Quero meu produto pronto
