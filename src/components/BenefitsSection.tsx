@@ -5,7 +5,9 @@ const BenefitsSection = () => {
     "Transforme seu conhecimento em um produto digital pronto para vender.",
     "Tenha um passo a passo simples, sem precisar de experiência anterior.",
     "Coloque suas primeiras campanhas no ar com segurança e clareza.",
-    "Ganhe independência digital sem depender de agências ou freelas."
+    "Ganhe independência digital sem depender de agências ou freelas.",
+    "Aprenda a validar suas ideias antes de investir tempo e dinheiro.",
+    "Domine as métricas essenciais para otimizar seus resultados."
   ];
 
   return (
@@ -20,7 +22,7 @@ const BenefitsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
