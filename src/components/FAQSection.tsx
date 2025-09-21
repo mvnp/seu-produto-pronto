@@ -73,7 +73,7 @@ const FAQSection = () => {
                 Nossa equipe de suporte está pronta para ajudar você!
               </p>
               <p className="text-sm text-primary font-medium">
-                📧 suporte@seuprodujodigitalpronto.com.br
+                📧 suporte@axitech.com.br
               </p>
             </div>
           </div>
