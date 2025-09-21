@@ -1,32 +1,22 @@
-# Etapa de build (para compilar dependências, se tiver)
+# Etapa 1: Build da aplicação
 FROM node:24-alpine AS builder
 
-# Define diretório de trabalho
 WORKDIR /app
 
-# Copia apenas arquivos de dependência
 COPY package*.json ./
+RUN npm ci
 
-# Instala dependências
-RUN npm ci --omit=dev
-
-# Copia o restante do código
 COPY . .
+RUN npm run build
 
-# Etapa final (imagem enxuta)
-FROM node:24-alpine AS runner
+# Etapa 2: Servir os arquivos estáticos com Nginx
+FROM nginx:alpine AS runner
 
-WORKDIR /app
+# Copia o build do Vite para o diretório padrão do Nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copia dependências já instaladas da etapa anterior
-COPY --from=builder /app /app
+# Expor a porta do Nginx
+EXPOSE 80
 
-# Expõe a porta que o Node vai rodar
-EXPOSE 3000
-
-# Define variável de ambiente padrão
-ENV NODE_ENV=production
-ENV PORT=3000
-
-# Comando para iniciar a aplicação
-CMD ["npm", "start"]
+# Iniciar Nginx
+CMD ["nginx", "-g", "daemon off;"]
