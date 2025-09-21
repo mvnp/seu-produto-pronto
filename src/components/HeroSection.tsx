@@ -22,7 +22,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-            mesmo que você comece do absoluto zero.
+            mesmo que você comece do absoluto zero
           </p>
           
           <div className="max-w-3xl mx-auto mb-12">
