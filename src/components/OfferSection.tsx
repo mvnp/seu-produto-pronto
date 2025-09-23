@@ -30,8 +30,8 @@ const OfferSection = () => {
                 <div className="text-center mb-8">
                   <div className="text-lg text-muted-foreground mb-2">Preço de entrada acessível</div>
                   <div className="flex items-center justify-center gap-2 md:gap-4 mb-4">
-                    <span className="text-lg md:text-2xl text-muted-foreground line-through">R$ 997</span>
-                    <span className="text-3xl md:text-5xl font-bold text-primary">R$ 297</span>
+                    <span className="text-lg md:text-2xl text-muted-foreground line-through">R$ 1997</span>
+                    <span className="text-3xl md:text-5xl font-bold text-primary">R$ 997</span>
                   </div>
                   <div className="text-lg text-muted-foreground">ou 12x de R$ 29,70</div>
                 </div>
